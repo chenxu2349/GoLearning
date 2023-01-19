@@ -7,6 +7,6 @@ func main() {
 	println("hello world2")
 	var a string = "NULL"
 	var b int = 20
-	var c, d = 0.5, "OK"
+	var c, d = 0.5, "OK123"
 	println(a, b, c, d)
 }
