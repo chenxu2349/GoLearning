@@ -6,6 +6,8 @@ import (
 
 func main() {
 	basicLearning()
+	slice := []int{1, 2, 3, 4, 5}
+	function(slice...) //切片作为不定参数传入函数内需要加三个...
 	//http.HandleFunc("/", indexHandler)
 	//http.HandleFunc("/hello", helloHandler)
 	//log.Fatal(http.ListenAndServe(":9999", nil))
@@ -58,9 +60,14 @@ func basic2() {
 
 	//array
 	var arr0 [2]int
+	println(len(arr0))
 	arr1 := [3]int{1, 4, 7}
+	for i, v := range arr1 {
+		println(i, v)
+	}
 	arr2 := [...]float64{7.0, 8.1, 9.5, 12.9}
 	arr2Len := len(arr2)
+	println(arr2Len)
 	arr3 := [5]int{1: 3, 2: 6, 3: 1} //通过索引初始化值
 	for i, v := range arr3 {
 		println(i, v)
@@ -73,18 +80,27 @@ func basic2() {
 	s3 := array[3:]
 	s4 := make([]int, 10) //make([]int, len, cap)
 	s5 := make([]int, 10, 15)
+	print(len(s1), len(s2), len(s3), len(s4), len(s5))
 
 	s1 = append(s1, 100) //切片支持的操作：len(a), cap(a), a = append(a, 1), append(a, c...), copy(b, a)
 
 	str := "hello, 世界！" // 字符串和切片相互转换
 	a1 := []byte(str)
 	b1 := []rune(str)
-
+	print(len(a1), len(b1))
 	//map[K]T
 
 }
 
-func sum(a, b int) *int {
+func sum11(a, b int) *int {
 	sum := a + b
 	return &sum
+}
+
+//不定参数
+func function(arr ...int) (sum int) { //返回有名的返回值,默认返回sum
+	for _, v := range arr {
+		sum += v
+	}
+	return
 }
