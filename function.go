@@ -44,4 +44,14 @@ func main() {
 		}
 	}(1, 3) //自己调用自己，如果这里不传参数那么x就是一个函数变量
 	print(x)
+
+	//指针
+	var ip *int
+	fmt.Printf("ip : %v\n", ip)
+	fmt.Printf("ip : %T\n", ip)
+
+	a := 10
+	ip = &a
+	fmt.Printf("ip : %v\n", ip)
+	fmt.Printf("ip : %v\n", *ip)
 }
