@@ -20,7 +20,7 @@ https://github.com/gogf/gf
 
 ## 练手项目
 
-**id-maker**  
+**1. id-maker**  
 项目地址： https://github.com/yongxinz/id-maker  
 
 Go 开发的一款分布式唯一 ID 生成系统。
@@ -28,14 +28,14 @@ Go 开发的一款分布式唯一 ID 生成系统。
 
 <br>
 
-**cache2go**  
+**2. cache2go**  
 项目地址： https://github.com/muesli/cache2go
 
 比较简单的一个缓存库，代码量很少，适合新手学习。通过这个项目可以学习到锁、goroutine 等知识。
 
 <br>
 
-**rosedb**  
+**3. rosedb**  
 项目地址： https://github.com/flower-corp/rosedb
 
 rosedb 是一个稳定、高性能、快速、内嵌的 k-v 存储引擎，支持多种数据结构，包含 String、List、Hash、Set、Sorted Set，接口名称风格和 Redis 类似。
@@ -43,7 +43,7 @@ rosedb 是一个稳定、高性能、快速、内嵌的 k-v 存储引擎，支�
 
 <br>
 
-**wechat-go**  
+**4. wechat-go**  
 项目地址： https://github.com/songtianyi/wechat-go
 
 这是微信 Web 版 API 的 Go 语言实现，模拟微信网页版的登录／联系人／消息收发等功能，可以完全接管微信收到的消息，并定制自己的发送内容。  
@@ -51,7 +51,7 @@ rosedb 是一个稳定、高性能、快速、内嵌的 k-v 存储引擎，支�
 
 <br>
 
-**gin-vue-admin**  
+**5. gin-vue-admin**  
 项目地址： https://github.com/flipped-aurora/gin-vue-admin
 
 gin-vue-admin 是一个使用 gin + vue 进行极速开发的全栈后台管理系统，后台使用 gin 框架，前端主要使用 vue。
